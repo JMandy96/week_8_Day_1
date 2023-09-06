@@ -10,7 +10,7 @@ let b = 'Thieves';
 let c = [true, false, false];
 // A: boolean[]
 
-//let d = {age: number};
+let d = {age: number};
 // A: any in this case, number if following this "dictionary" with } = {age:25}
 
 let e = [3]
@@ -25,23 +25,23 @@ let g = []
 
 
 // 2. What are the compilation errors in each of the following code snippets?
-/*let song: {
+let song: {
   title: string,
     releaseYear: number,
 } = {
     title: 'Lose Yourself'
 };
-*/
+
 // A:  the releaseYear variable is missing. 
 
 let prices = [100, 200, 300];
-//prices[0] = '$100';
-// A: string is not assignable to type 'number'
+prices[0] = '$100';
+A: string is not assignable to type 'number'
 
-//function myFunc(a: number, b: number): number {}
+function myFunc(a: number, b: number): number {}
 
-// A: A function whose declared type is neither 'undefined','void', or 'any' must return a value.
-//a is declared but its value is never read, b is declared but its value is never read.
+A: A function whose declared type is neither 'undefined','void', or 'any' must return a value-
+a is declared but its value is never read, b is declared but its value is never read.
 
 
 //codewars: 
